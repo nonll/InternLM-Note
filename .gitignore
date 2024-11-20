@@ -5,6 +5,9 @@ __pycache__/
 
 .vscode/
 
+vx.*
+vx_notebook/
+
 # C extensions
 *.so
 
