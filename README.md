@@ -4,14 +4,11 @@
 
 ![icamp4](https://github.com/user-attachments/assets/cf5eca85-bb13-4b96-aa54-b29fa40d36b7)
 
-
-闯关手册：https://aicarrier.feishu.cn/wiki/QtJnweAW1iFl8LkoMKGcsUS9nld
-
+闯关手册：<https://aicarrier.feishu.cn/wiki/QtJnweAW1iFl8LkoMKGcsUS9nld>
 
 ## 1. 关卡
 
 ![update](https://github.com/user-attachments/assets/1f65a77a-3490-47ff-b408-be6d7a190802)
-
 
 ### 1.1. 入门关卡
 
@@ -22,9 +19,7 @@
 |第 3 关|Git 前置基础|[任务](https://github.com/InternLM/Tutorial/tree/camp4/docs/L0/git/task.md)、[文档](https://github.com/InternLM/Tutorial/tree/camp4/docs/L0/git/)、[视频](https://www.bilibili.com/video/BV15MShYkEgg)| 50元算力点 |
 |第 4 关|玩转「HF/魔搭/魔乐」平台|[任务](https://github.com/InternLM/Tutorial/tree/camp4/docs/L0/maas/task.md)、[文档](https://github.com/InternLM/Tutorial/tree/camp4/docs/L0/maas)、[视频](https://www.bilibili.com/video/BV1XxStYYEH1/)| 50元算力点 |
 
-
 ### 1.2. 基础关卡
-
 
 ||关卡名称|资料|闯关激励|
 |:-----|:----|:----|:-----|
@@ -34,8 +29,6 @@
 |第 4 关| InternLM + LlamaIndex RAG 实践|[任务](https://github.com/InternLM/Tutorial/tree/camp4/docs/L1/LlamaIndex/task.md)、[文档](https://github.com/InternLM/Tutorial/tree/camp4/docs/L1/LlamaIndex)、[视频](https://www.bilibili.com/video/BV1YzDJY1E2i/)| 100元算力点 |
 |第 6 关| XTuner 微调个人小助手认知 | [任务](https://github.com/InternLM/Tutorial/tree/camp4/docs/L1/XTuner/task.md)、[文档](https://github.com/InternLM/Tutorial/tree/camp4/docs/L1/XTuner)、[视频](https://www.bilibili.com/video/BV1G9SJYGEtD)| 100元算力点 |
 |第 7 关| OpenCompass 评测书生大模型实践 | [任务](https://github.com/InternLM/Tutorial/blob/camp4/https://github.com/InternLM/Tutorial/tree/camp4/docs/L1/Evaluation/task.md)、[文档](https://github.com/InternLM/Tutorial/blob/camp4/https://github.com/InternLM/Tutorial/tree/camp4/docs/L1/Evaluation/)、[视频](https://www.bilibili.com/video/BV1dtD4YKENj)| 100元算力点 |
-
-
 
 ### 1.3. 进阶关卡
 
