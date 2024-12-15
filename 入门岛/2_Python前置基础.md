@@ -285,6 +285,7 @@ print(response)
 ## 作业
 
 ### 闯关任务 Leetcode 383(笔记中提交代码与leetcode提交通过截图)
+![2_leetcode](vx_images/2_leetcode.png)
 
 ### 闯关任务 Vscode连接InternStudio debug笔记
 

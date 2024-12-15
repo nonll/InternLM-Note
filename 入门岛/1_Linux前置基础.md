@@ -15,8 +15,8 @@
 
 闯关任务需要在关键步骤中截图：
 
-|            | 任务描述                                      | 完成所需时间 |
-| ---------- | --------------------------------------------- | ------------ |
+|            |                   任务描述                   | 完成所需时间 |
+| ---------- | -------------------------------------------- | ------------ |
 | 闯关任务   | 完成SSH连接与端口映射并运行`hello_world.py`   | 10min        |
 | 可选任务 1 | 将Linux基础命令在开发机上完成一遍             | 10min        |
 | 可选任务 2 | 使用 VSCODE 远程连接开发机并创建一个conda环境 | 10min        |
@@ -189,13 +189,74 @@ apropos：搜索命令关键字。
 
 ### 4. Conda和Shell介绍
 
+Conda 是一个开源的包管理和环境管理系统，可在 Windows、macOS 和 Linux 上运行。它快速安装、运行和更新软件包及其依赖项。使用 Conda，您可以轻松在本地计算机上创建、保存、加载和切换不同的环境。
+
+#### 4.1 conda环境管理
+
+> conda 默认配置文件`~/.condarc`
+
+``` bash
+# 设置清华镜像
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
+conda config --set show_channel_urls yes
+# 创建conda环境
+conda create -n name python=3.10
+# 查看conda环境
+conda env list
+conda info -e
+conda info --envs
+# 激活conda环境
+conda activate <name>
+# 删除conda环境
+conda remove --name <name> --all
+# 获得环境中的所有配置
+conda env export --name myenv > myenv.yml
+# 重新还原环境
+conda env create -f  myenv.yml
+```
+
+#### 4.2 conda和pip的一些区别：
+
+1. conda可以管理非python包，pip只能管理python包。
+2. conda可以用来创建虚拟环境，pip不能，需要依赖virtualenv之类的包。
+3. conda安装的包是编译好的二进制文件，安装包文件过程中会自动安装依赖包；pip安装的包是wheel或源码，装过程中不会去支持python语言之外的依赖项。
+4. conda安装的包会统一下载到当前虚拟环境对应的目录下，下载一次多次安装。pip是直接下载到对应环境中。
+
+#### 4.3 Conda和Mamba区别
+
+1. 基本定义与用途：
+Conda：是一个开源的包管理系统和环境管理工具，用于安装、管理和切换Python包、R包、机器学习框架等。
+Mamba：是一个快速包管理工具，旨在替代Conda，提供类似的功能但具有更快的安装速度和更小的体积。
+2. 性能与特点：
+安装速度：Mamba通常比Conda更快，因为它利用了零层包缓存。
+资源占用：Mamba相对轻量级，占用更少的系统资源。
+3. 兼容性与互操作性：
+软件包兼容性：Conda已经存在多年，许多软件包都与Conda兼容，提供更多的选择。
+互操作性：Conda和Mamba可以互操作，用户可以在两者之间轻松切换或使用它们来管理相同的Python环境，但可能需要一些调整或配置。
+4. 社区支持与文档资源：
+Conda拥有庞大的用户社区和丰富的文档资源，更容易找到解决方案或寻求帮助。
+Mamba的社区相对较小，但正在不断发展，相关的文档和社区支持也在不断完善。
+
 ## 作业
 
 ### 闯关任务 | 完成SSH连接与端口映射并运行`hello_world.py`
 
+
+![运行helloword ](vx_images/1_helloword0.png)
+
+![helloword界面](vx_images/1_helloword.jpeg)
 ### 可选任务 1 | 将Linux基础命令在开发机上完成一遍
 
+![linux命令](vx_images/linux命令.png)
+
 ### 可选任务 2 | 使用 VSCODE 远程连接开发机并创建一个conda环境
+
+![1_创建conda环境](vx_images/1_创建conda环境.png)
+![1_激活conda环境](vx_images/1_激活conda环境.png)
 
 ## 小结
 
