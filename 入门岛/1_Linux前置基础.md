@@ -258,6 +258,13 @@ Mamba的社区相对较小，但正在不断发展，相关的文档和社区支
 ![1_创建conda环境](vx_images/1_创建conda环境.png)
 ![1_激活conda环境](vx_images/1_激活conda环境.png)
 
+
+## FAQ
+
+1. 如何配置SSH密钥对以实现免密登录？
+
+- 在本地生成SSH密钥对，并将公钥复制到开发机的~/.ssh/authorized_keys文件中，确保权限设置正确。
+
 ## 小结
 
 ### 1. 如何在InternStudio创建开发机
